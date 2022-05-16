@@ -1,8 +1,8 @@
-CC = arm-none-eabi-gcc
+CC = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc
 MACH = cortex-m3
 STL = st-flash
-BIN = arm-none-eabi-objcopy
-
+BIN = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-objcopy
+DEBUG = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb
 CFLAGS = -c -mthumb -mcpu=$(MACH) -std=gnu11 -O0 -Wall -g
 LDFLAGS = -T stm32_ls.ld -nostdlib -Wl,-Map=main.map
 
@@ -22,3 +22,6 @@ flash: main.bin
 
 clean:
 	rm -rf *.o *.elf *.bin *.map
+
+debug:
+	$(DEBUG) -tui main.elf
