@@ -1,4 +1,6 @@
-# Blink_Led Example
+# Button_Led Example
+
+Simple Button example for STM32L152RE
 
 - To compile
 
