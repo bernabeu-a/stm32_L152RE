@@ -1,8 +1,8 @@
-CC = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc
+CC = arm-none-eabi-gcc
 MACH = cortex-m3
-STL = st-flash
-BIN = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-objcopy
-DEBUG = /opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb
+STL = /Users/bernabeu-a/bin/stlink/build/Release/bin/st-flash
+BIN = arm-none-eabi-objcopy
+DEBUG = arm-none-eabi-gdb
 CFLAGS = -c -mthumb -mcpu=$(MACH) -std=gnu11 -O0 -Wall -g
 LDFLAGS = -T stm32_ls.ld -nostdlib -Wl,-Map=main.map
 
@@ -18,7 +18,7 @@ main.bin: main.elf
 	$(BIN) -O binary main.elf main.bin
 
 flash: main.bin
-	$(STL) write main.bin 0x8000000
+	$(STL) --reset write main.bin 0x8000000
 
 clean:
 	rm -rf *.o *.elf *.bin *.map
