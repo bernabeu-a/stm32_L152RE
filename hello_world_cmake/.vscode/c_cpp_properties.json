@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "STM32 ARM",
+            "defines": [
+                "STM32L15xxE",
+                "ARMCM3"
+            ],
+            "includePath": [
+                "/Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include"
+            ],
+            "compilerPath": "/Applications/ARM/bin/arm-none-eabi-gcc",
+            "intelliSenseMode": "gcc-arm",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m3"
+            ]
+            // "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

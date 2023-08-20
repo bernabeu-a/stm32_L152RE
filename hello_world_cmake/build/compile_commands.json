@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/build",
+  "command": "/Applications/ARM/bin/arm-none-eabi-gcc  -I/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake -O0 -Wno-deprecated -DDebug -mthumb -mcpu=cortex-m3 -O0 -Wall -g -ffunction-sections -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -o CMakeFiles/hello_world_cmake.dir/main.c.obj -c /Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/main.c",
+  "file": "/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/main.c"
+},
+{
+  "directory": "/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/build",
+  "command": "/Applications/ARM/bin/arm-none-eabi-gcc  -I/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake -O0 -Wno-deprecated -DDebug -mthumb -mcpu=cortex-m3 -O0 -Wall -g -ffunction-sections -Wextra -Wcast-align -Wshadow -Wlogical-op -Wsuggest-final-types -Wsuggest-final-methods -o CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj -c /Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/stm32_startup.c",
+  "file": "/Users/bernabeu-a/Code/stm32_L152RE/hello_world_cmake/stm32_startup.c"
+}
+]

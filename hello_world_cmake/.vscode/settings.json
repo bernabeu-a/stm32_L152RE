@@ -1,0 +1,6 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/arm-none-eabi.cmake"
+    },
+    "cmake.configureOnOpen": false
+}

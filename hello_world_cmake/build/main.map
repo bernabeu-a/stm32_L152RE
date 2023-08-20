@@ -1,0 +1,123 @@
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+ .vector_table  0x0000000000000000      0x124 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+ .text.Default_Handler
+                0x0000000000000000        0x6 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000008000000 0x0000000000080000 xr
+SRAM             0x0000000020000000 0x0000000000014000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/hello_world_cmake.dir/main.c.obj
+LOAD CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.text           0x0000000008000000        0x0
+ *(.vector_table)
+ *(.text)
+ *(.rodata)
+                0x0000000008000000                . = ALIGN (0x4)
+                0x0000000008000000                _etext = .
+                0x00000000080000ec                _la_data = LOADADDR (.data)
+
+.glue_7         0x0000000008000000        0x0
+ .glue_7        0x0000000008000000        0x0 linker stubs
+
+.glue_7t        0x0000000008000000        0x0
+ .glue_7t       0x0000000008000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000000008000000        0x0
+ .vfp11_veneer  0x0000000008000000        0x0 linker stubs
+
+.v4_bx          0x0000000008000000        0x0
+ .v4_bx         0x0000000008000000        0x0 linker stubs
+
+.text.main      0x0000000008000000       0x68
+ .text.main     0x0000000008000000       0x68 CMakeFiles/hello_world_cmake.dir/main.c.obj
+                0x0000000008000000                main
+
+.text.Reset_Handler
+                0x0000000008000068       0x84
+ .text.Reset_Handler
+                0x0000000008000068       0x84 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+                0x0000000008000068                Reset_Handler
+
+.iplt           0x00000000080000ec        0x0
+ .iplt          0x00000000080000ec        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.rel.dyn        0x00000000080000ec        0x0
+ .rel.iplt      0x00000000080000ec        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.data           0x0000000020000000        0x0 load address 0x00000000080000ec
+                0x0000000020000000                _sdata = .
+ *(.data)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.igot.plt       0x0000000020000000        0x0 load address 0x00000000080000ec
+ .igot.plt      0x0000000020000000        0x0 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.bss            0x0000000020000000        0x0 load address 0x00000000080000ec
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sbss = .
+ *(.bss)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _ebss = .
+                0x0000000020000000                . = ALIGN (0x4)
+OUTPUT(hello_world_cmake elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x0000000000000000      0x23a
+ .debug_info    0x0000000000000000       0xb2 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_info    0x00000000000000b2      0x188 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_abbrev   0x0000000000000000      0x155
+ .debug_abbrev  0x0000000000000000       0x6f CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_abbrev  0x000000000000006f       0xe6 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_aranges  0x0000000000000000       0x48
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_aranges
+                0x0000000000000020       0x28 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_ranges   0x0000000000000000       0x28
+ .debug_ranges  0x0000000000000000       0x10 CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_ranges  0x0000000000000010       0x18 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_line     0x0000000000000000      0x287
+ .debug_line    0x0000000000000000      0x10e CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_line    0x000000000000010e      0x179 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_str      0x0000000000000000      0x1fa
+ .debug_str     0x0000000000000000      0x152 CMakeFiles/hello_world_cmake.dir/main.c.obj
+                                        0x18f (size before relaxing)
+ .debug_str     0x0000000000000152       0xa8 CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+                                        0x1fd (size before relaxing)
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 CMakeFiles/hello_world_cmake.dir/main.c.obj
+                                         0x4a (size before relaxing)
+ .comment       0x0000000000000049       0x4a CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.ARM.attributes
+                0x0000000000000000       0x2d
+ .ARM.attributes
+                0x0000000000000000       0x2d CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .ARM.attributes
+                0x000000000000002d       0x2d CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj
+
+.debug_frame    0x0000000000000000       0x78
+ .debug_frame   0x0000000000000000       0x2c CMakeFiles/hello_world_cmake.dir/main.c.obj
+ .debug_frame   0x000000000000002c       0x4c CMakeFiles/hello_world_cmake.dir/stm32_startup.c.obj

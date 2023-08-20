@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+078df8c6c053fd1ee0d69d88a3a65ff2 CMakeFiles/bin
+e9104c9c5f493fc87a9ab17dfdd6c164 CMakeFiles/flash
+05a1c4882c718927914b5fc8e2e809ac hello_world_cmake.bin
